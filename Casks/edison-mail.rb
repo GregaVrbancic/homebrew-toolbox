@@ -2,7 +2,8 @@ cask 'edison-mail' do
   version '0.4.96'
   sha256 '352ae70a9a0e6e91f6e273378516953022376770cc54dfdf1b3394c89324d358'
 
-  url "https://edison-static2.s3.us-east-2.amazonaws.com/desktop/EdisonMail.dmg"
+  # edison-static2.s3.us-east-2.amazonaws.com was verified as official when first introduced to the cask
+  url 'https://edison-static2.s3.us-east-2.amazonaws.com/desktop/EdisonMail.dmg'
   name 'Edison Mail'
   homepage 'https://mail.edison.tech/mac'
 
