@@ -15,6 +15,6 @@ cask 'edison-mail' do
                '~/Library/Application Support/EdisonMail',
                '~/Library/ApplicationSupport/EdisonMail',
                '~/Library/Preferences/com.edisonmail.*',
-               '~/Library/Saved Application State/com.edisonmail.edisonmail.savedState'
+               '~/Library/Saved Application State/com.edisonmail.edisonmail.savedState',
              ]
 end
