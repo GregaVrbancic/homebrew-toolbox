@@ -10,8 +10,11 @@ cask 'epoccam-drivers' do
 
   pkg "EpocCam Installer_#{version}.pkg"
 
-  uninstall script: {
-                      executable: '/Library/CoreMediaIO/Plug-Ins/DAL/EpocCamPlugIn.plugin/Contents/Resources/uninst.sh',
-                      sudo:       true,
-                    }
+  uninstall script:  {
+                       executable: '/Library/CoreMediaIO/Plug-Ins/DAL/EpocCamPlugIn.plugin/Contents/Resources/uninst.sh',
+                       sudo:       true,
+                     },
+            pkgutil: [
+                       'com.kinoni.pkg.epoccam-installer',
+                     ]
 end
