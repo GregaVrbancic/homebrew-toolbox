@@ -6,7 +6,7 @@ cask 'epoccam-drivers' do
   name 'EpocCam Drivers'
   homepage 'http://www.kinoni.com/'
 
-  depends_on macos: ">= :sierra"
+  depends_on macos: '>= :sierra'
 
   pkg "EpocCam Installer_#{version}.pkg"
 
