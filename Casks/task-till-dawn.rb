@@ -6,7 +6,7 @@ cask 'task-till-dawn' do
   name 'Task Till Dawn'
   homepage 'https://www.oliver-matuschin.de/en/projects/task-till-dawn'
 
-  depends_on macos: '>= 10.8.5'
+  depends_on macos: '>= 10.8'
 
   app 'Task Till Dawn/Task Till Dawn.app'
 
