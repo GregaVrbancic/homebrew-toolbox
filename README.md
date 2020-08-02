@@ -17,7 +17,8 @@ The available cask packages are:
 
 - [edison-mail](https://mail.edison.tech/mac) :point_right: install with ```brew cask install edison-mail```
 - [epoccam-drivers](http://www.kinoni.com/) :point_right: install with ```brew cask install epoccam-drivers```
-- [daily-wall](https://dailywall.space/) :point_right: install with ```brew cask install daily-wall```
+- [daily-wall@1](https://dailywall.space/) :point_right: install with ```brew cask install daily-wall@1```
+- [daily-wall](https://dailywallapp.com/) :point_right: install with ```brew cask install daily-wall```
 - [task-till-dawn](https://www.oliver-matuschin.de/en/projects/task-till-dawn) :point_right: install with ```brew cask install task-till-dawn```
 
 ## Contributing
