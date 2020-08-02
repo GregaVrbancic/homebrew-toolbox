@@ -11,6 +11,7 @@
 The available formula packages are:
 
 - [go-wol](https://github.com/sabhiram/go-wol) :point_right: install with ```brew install go-wol```
+- [slack-term](https://github.com/erroneousboat/slack-term) :point_right: install with ```brew install slack-term```
 
 The available cask packages are:
 
