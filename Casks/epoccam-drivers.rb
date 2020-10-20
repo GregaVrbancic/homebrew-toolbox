@@ -1,8 +1,8 @@
 cask 'epoccam-drivers' do
-  version '1_7'
-  sha256 'd1a0681a026917476e87f946653ed1107702f6416f4fa26b40c6a014ee7b902a'
+  version '2_2'
+  sha256 'e00fe8dd347abd15ad72dc0982ac13c23fb50488c4625d59172c8316f13afc57'
 
-  url "http://kinoconsole.kinoni.com/EpocCam%20Installer_#{version}.pkg.zip"
+  url "https://kinonicom.r.worldssl.net/wp-content/uploads/EpocCam-Installer_#{version}.pkg_.zip"
   name 'EpocCam Drivers'
   homepage 'http://www.kinoni.com/'
 
