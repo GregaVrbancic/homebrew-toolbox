@@ -15,6 +15,7 @@ The available formula packages are:
 
 The available cask packages are:
 
+- [proXSign](https://proxsign.setcce.si/proXSignCustomerPages/index2.html) :point_right: install with ```brew cask install proxsign```
 - [edison-mail](https://mail.edison.tech/mac) :point_right: install with ```brew cask install edison-mail```
 - [epoccam-drivers](http://www.kinoni.com/) :point_right: install with ```brew cask install epoccam-drivers```
 - [daily-wall@1](https://dailywall.space/) :point_right: install with ```brew cask install daily-wall@1```
