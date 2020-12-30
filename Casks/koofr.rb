@@ -6,6 +6,8 @@ cask 'koofr' do
     name 'Koofr'
     homepage 'https://koofr.er/'
 
+    depends_on macos: '>= :yosemite'
+
     app 'Koofr.app'
 
   end
