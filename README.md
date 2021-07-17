@@ -22,6 +22,7 @@ The available cask packages are:
 - [daily-wall](https://dailywallapp.com/) :point_right: install with ```brew install --cask daily-wall```
 - [task-till-dawn](https://www.oliver-matuschin.de/en/projects/task-till-dawn) :point_right: install with ```brew install --cask task-till-dawn```
 - [neuralcam-live](https://neural.cam/live/) :point_right: install with ```brew install --cask neuralcam-live```
+- [Dropzone4](https://aptonic.com/) :point_right: install with ```brew install --cask dropzone```
 
 ## Contributing
 
