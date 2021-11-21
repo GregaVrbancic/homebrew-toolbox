@@ -1,5 +1,5 @@
 cask 'proxsign' do
-  sha256 'b92cee68dcb6a51d3f7cd40bd35635cafceb1d5275ec142c5a996b1d08bdb3a0'
+  sha256 '085b7d017c2145b32116b26f296576bb61d0492ee8060cf465418348090663de'
 
   url "https://public.setcce.si/proxsign/update/mac/SETCCE_proXSign.pkg"
   name 'proXSign'
