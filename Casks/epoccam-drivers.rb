@@ -1,12 +1,12 @@
 cask 'epoccam-drivers' do
-  version '2_2'
-  sha256 'e00fe8dd347abd15ad72dc0982ac13c23fb50488c4625d59172c8316f13afc57'
+  version '3_3'
+  sha256 'a676c29ea85cac2d7568de554f946bfa7523a8acd49f488034c1a0a1a50d8d39'
 
-  url "https://kinonicom.r.worldssl.net/wp-content/uploads/EpocCam-Installer_#{version}.pkg_.zip"
+  url "https://kinonicom.r.worldssl.net/wp-content/uploads/EpocCam-Installer_#{version}.pkg"
   name 'EpocCam Drivers'
   homepage 'http://www.kinoni.com/'
 
-  depends_on macos: '>= :sierra'
+  depends_on macos: '>= :mojave'
 
   pkg "EpocCam Installer_#{version}.pkg"
 
