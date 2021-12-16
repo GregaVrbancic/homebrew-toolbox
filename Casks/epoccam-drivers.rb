@@ -2,7 +2,7 @@ cask 'epoccam-drivers' do
   version '3_3'
   sha256 'a676c29ea85cac2d7568de554f946bfa7523a8acd49f488034c1a0a1a50d8d39'
 
-  url "https://kinonicom.r.worldssl.net/wp-content/uploads/EpocCam-Installer_#{version}.pkg"
+  url "https://edge.elgato.com/egc/macos/epoccam/EpocCam_Installer_#{version}.pkg"
   name 'EpocCam Drivers'
   homepage 'http://www.kinoni.com/'
 
