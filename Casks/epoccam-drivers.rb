@@ -8,7 +8,7 @@ cask 'epoccam-drivers' do
 
   depends_on macos: '>= :mojave'
 
-  pkg "EpocCam Installer_#{version}.pkg"
+  pkg "EpocCam_Installer_#{version}.pkg"
 
   uninstall script:  {
                        executable: '/Library/CoreMediaIO/Plug-Ins/DAL/EpocCamPlugIn.plugin/Contents/Resources/uninst.sh',
