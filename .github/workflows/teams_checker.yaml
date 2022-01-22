@@ -1,0 +1,31 @@
+name: MS Teams Preview version checker
+
+on: workflow_dispatch
+
+jobs:
+  check_version:
+    runs_on: "ubuntu-latest"
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v2
+      - name: Get Teams version and check if the same
+        run: |        
+          repo_ver=$(cat Casks/microsoft-teams-preview.rb | grep "version " | awk '{print $2}' | sed 's/\"//g')
+          curr_ver=$(curl -s -X GET https://teams.microsoft.com/desktopclient/installer/osx/x64\?ring\=ring3_6 | cut -d '/' -f 5)
+
+          if [ "$repo_ver" = "$curr_ver" ]; then
+              echo "The version are the same."
+          else
+              echo "Version in the repository is $repo_ver while the current version is $curr_ver"
+          fi
+          
+          echo "curr_ver=$curr_ver" >> $GITHUB_ENV
+      - name: If newer version exist
+        if: env.curr_ver
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: notifications
+          SLACK_MESSAGE: 'Update MS Teams to version ${{ env.curr_ver }}'
+          SLACK_TITLE: Update MS Teams version
+          SLACK_USERNAME: homebrew-toolbox-bot
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
