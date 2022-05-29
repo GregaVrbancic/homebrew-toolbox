@@ -1,6 +1,6 @@
 cask "microsoft-teams-preview" do
-    version "1.5.00.12660"
-    sha256 "f34ba77f8d24bc8a8b80d4dcfceb862864f9c7cb20d01e88446609c820a6cf95"
+    version "1.5.00.12661"
+    sha256 "e7bb279654ec9277023d260c0aeef734b33829d0901455860d334d360d82845d"
   
     url "https://statics.teams.cdn.office.net/production-osx/#{version}/Teams_osx.pkg",
         verified: "statics.teams.cdn.office.net"
