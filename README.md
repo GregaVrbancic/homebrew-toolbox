@@ -2,33 +2,21 @@
 
 ## Quick start
 
-- Install [Homebrew](http://brew.sh/)
-- Tap homebrew-toolbox: ```brew tap gregavrbancic/toolbox```
-- Install packages: ```brew install <package>``` (e.g. ```brew install go-wol```)
+```sh
+brew tap gregavrbancic/toolbox
+brew install --cask proxsign
+```
 
-## List of packages
+## Packages
 
-The available formula packages are:
+| Cask | Description |
+| --- | --- |
+| [proxsign](https://proxsign.setcce.si/proXSignCustomerPages/index2.html) | SETCCE proXSign, digital signing component for Slovenian e-government services |
 
-- [go-wol](https://github.com/sabhiram/go-wol) :point_right: install with ```brew install go-wol```
-- [slack-term](https://github.com/erroneousboat/slack-term) :point_right: install with ```brew install slack-term```
-
-The available cask packages are:
-
-- [proXSign](https://proxsign.setcce.si/proXSignCustomerPages/index2.html) :point_right: install with ```brew install --cask proxsign```
-- [edison-mail](https://mail.edison.tech/mac) :point_right: install with ```brew install --cask edison-mail```
-- [epoccam-drivers](http://www.kinoni.com/) :point_right: install with ```brew install --cask epoccam-drivers```
-- [daily-wall@1](https://dailywall.space/) :point_right: install with ```brew install --cask daily-wall@1```
-- [daily-wall](https://dailywallapp.com/) :point_right: install with ```brew install --cask daily-wall```
-- [task-till-dawn](https://www.oliver-matuschin.de/en/projects/task-till-dawn) :point_right: install with ```brew install --cask task-till-dawn```
-- [NeuralCam Live](https://neural.cam/live/) :point_right: install with ```brew install --cask neuralcam-live```
-- [Dropzone4](https://aptonic.com/) :point_right: install with ```brew install --cask dropzone```
-- [Microsoft Teams Preview](https://teams.microsoft.com/) :point_right: install with ```brew install --cask microsoft-teams-preview```
-
-## Contributing
-
-Feel free to contribute pull requests for additional applications as well as the bug fixes or open issues if you are having trouble using the homebrew formulas. The testing on different OSes is also welcome.
+To update proXSign, bump `version` and `sha256` in `Casks/proxsign.rb`
+(`shasum -a 256 SETCCE_proXSign_<version>.pkg`).
 
 ## Disclaimer
 
-I am not an author of the software available via this homebrew tap. Also, the homebrew formulas available in this repository are tested only on Mac OS Catalina and Arch linux.
+I am not the author of the software available via this tap. The upstream
+installer package is not code-signed by its vendor.
